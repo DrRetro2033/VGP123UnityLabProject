@@ -50,7 +50,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -844,6 +844,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: StarFlying1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2911
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68fd6656e50b0b44a3a6135854a935c
+      internalID: -1332303268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarFlying2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2911
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa47c4d6cf64794b98a4a9de2a1b38c
+      internalID: -1327661223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarFlying3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 2911
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df025e1066879b141aee1fddd4f7e4fa
+      internalID: 1142215079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StarFlying4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2911
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91f6d9eadfe78a4786205ade8d0ecff
+      internalID: -1110690354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -887,6 +971,10 @@ TextureImporter:
       MouthFullWalk2: 2002528259
       MouthFullWalk3: -581077295
       PuffOfAirInhale: 2024408158
+      StarFlying1: -1332303268
+      StarFlying2: -1327661223
+      StarFlying3: 1142215079
+      StarFlying4: -1110690354
       Walk1: -651673885
       Walk2: -1752480081
       Walk3: 1512726780

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Kirby
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-2.215943,"y":111.9953},"zoom":0.8,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"922750b1-78a8-47f3-97b5-6add5a71ec89","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-199.0,"y":-25.0},"guid":"afa73bea-97c3-45a8-b1dc-d00aea92db60","$version":"A","$type":"Unity.VisualScripting.Update"},{"argumentCount":0,"coroutine":true,"defaultValues":{"target":null,"name":{"$content":"CaughtEnemy","$type":"System.String"}},"position":{"x":-220.0,"y":106.0},"guid":"3cc9b0fd-9651-4b50-b77f-33effddd807e","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"13"},{"chainable":false,"parameterNames":["methodName"],"member":{"name":"StartCoroutine","parameterTypes":["System.String"],"targetType":"PlayerController","targetTypeName":"PlayerController","$version":"A"},"defaultValues":{"target":null,"%methodName":{"$content":"CaughtEnemy","$type":"System.String"}},"position":{"x":34.0,"y":31.0},"guid":"67ed16c4-6564-4c89-86e1-f6da69605a92","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"15"},{"sourceUnit":{"$ref":"13"},"sourceKey":"trigger","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"76473c0d-e3c5-4a14-8560-9a14c66dad76","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []
