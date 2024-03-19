@@ -597,7 +597,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 26
-        y: 2936
+        y: 2937
         width: 16
         height: 24
       alignment: 7
@@ -618,7 +618,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 63
-        y: 2936
+        y: 2937
         width: 24
         height: 24
       alignment: 7
@@ -723,7 +723,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 185
-        y: 2936
+        y: 2937
         width: 24
         height: 24
       alignment: 7
@@ -744,7 +744,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 213
-        y: 2936
+        y: 2937
         width: 24
         height: 24
       alignment: 7
@@ -853,7 +853,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -874,7 +874,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -895,7 +895,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -916,7 +916,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,6 +924,69 @@ TextureImporter:
       bones: []
       spriteID: d91f6d9eadfe78a4786205ade8d0ecff
       internalID: -1110690354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swallow1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2845
+        width: 24
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f5c0efbc3a0934294235ee940fec75
+      internalID: -511219166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swallow2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2844
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfd1b8bd4af2134485f3f7b115c49b1
+      internalID: -1785501408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swallow3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2844
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716001e0bcc09ea4e8c5937ab89116e9
+      internalID: 389725725
       vertices: []
       indices: 
       edges: []
@@ -975,6 +1038,9 @@ TextureImporter:
       StarFlying2: -1327661223
       StarFlying3: 1142215079
       StarFlying4: -1110690354
+      Swallow1: -511219166
+      Swallow2: -1785501408
+      Swallow3: 389725725
       Walk1: -651673885
       Walk2: -1752480081
       Walk3: 1512726780

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8349988525874126692}
   - component: {fileID: 7916174429585922782}
   - component: {fileID: 6801455141905310243}
+  - component: {fileID: 6600209889497075892}
   m_Layer: 0
   m_Name: BroomHatter
   m_TagString: Enemy
@@ -180,3 +181,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6600209889497075892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631752360925256763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c5efb9833f29145a4bee4efd327682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type_of_food: 1
