@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.Animations;
 using UnityEditorInternal;
 using UnityEngine;
@@ -23,16 +24,23 @@ public class PlayerController : MonoBehaviour
 	public GameObject SuckEffector;
 	public GameObject MouthArea;
 	public GameObject ProjectilePrefab;
+	public GameObject Camera;
 	public GameObject GUI;
 	public Transform proj_offset;
-
-	public AudioClip jump_sfx;
-	public AudioClip jump_in_air_sfx;
-	public AudioClip land_sfx;
-	public AudioClip inhale_sfx;
-	public AudioClip inhale_enemy_sfx;
-	public AudioClip exhale_star_sfx;
-	public AudioClip exhale_air_sfx;
+	[Serializable]
+	public struct AudioClips
+	{
+		public string name;
+		public AudioClip sound;
+	}
+	[Serializable]
+	public struct AbilityGainAnimation
+	{
+		public string name;
+		public AnimationClip clip;
+	}
+	public AudioClips[] Sounds;
+	public AbilityGainAnimation[] Abilitiy_Gain_Animations;
 	//Components
 	Rigidbody2D rb;
     SpriteRenderer sr;
@@ -41,16 +49,40 @@ public class PlayerController : MonoBehaviour
 	AudioSource audio_source;
 	public float speed = 5.0f;
 	public int max_health = 6;
+	public int lives = 3;
 	int health = 6;
 	private const float max_speed = 500.0f;
     private const float jump_force = 13.0f;
 	private FOOD food_in_mouth = FOOD.NONE;
 	private const float gravity_scale = 3.0f;
     private bool can_jump = false;
+	private bool was_in_air = false;
 	private bool mouth_full = false;
 	private float last_known_vertical_input = 0.0f;
 	// Start is called before the first frame update
 
+	AudioClip GetSound(string name) {
+		for(int i = 0; i < Sounds.Length; i++) { 
+			AudioClips y = Sounds[i];
+			if (y.name == name) {
+				return y.sound;
+			}
+		}
+		return null;
+	}
+
+	AnimationClip GetGainAnimation(string name)
+	{
+		for (int i = 0; i < Abilitiy_Gain_Animations.Length; i++)
+		{
+			AbilityGainAnimation y = Abilitiy_Gain_Animations[i];
+			if (y.name == name)
+			{
+				return y.clip;
+			}
+		}
+		return null;
+	}
 	void Start()
     {
         //Component references grabbed through script
@@ -67,8 +99,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 		AnimatorStateInfo state = ani_hander.GetCurrentAnimatorStateInfo(0);
-		if (state.IsName("damage"))
-		{
+		if (state.IsName("damage") || state.IsTag("Swallow")) {
+			return;
+		}
+		if (state.IsTag("Gain")) {
+			rb.velocity = new Vector2(0, 0);
+			Time.timeScale = 0;
 			return;
 		}
 		Debug.DrawRay(collider.bounds.center, Vector2.down * (collider.bounds.extents.y + 0.06f));
@@ -83,14 +119,23 @@ public class PlayerController : MonoBehaviour
 		}
 		if (!state.IsName("inhale"))
 		{
-			if (IsGrounded())
-			{
+			if (IsGrounded()) {
 				ani_hander.SetBool("is_grounded", true);
+				if (was_in_air && rb.velocity.y <= Physics.gravity.y) {
+					audio_source.PlayOneShot(GetSound("land_sfx"));
+				}
+				was_in_air = false;
 			}
-			else
-			{
+			else {
 				ani_hander.SetBool("is_grounded", false);
+				was_in_air = true;
 			}
+		}
+		if (mouth_full && Input.GetKeyDown(KeyCode.S)){
+			ani_hander.SetLayerWeight(0, 0.0f);
+			ani_hander.SetLayerWeight(ani_hander.GetLayerIndex("Sword"), 1.0f);
+			ani_hander.SetTrigger("swallow");
+			mouth_full = false;
 		}
 		Breath();
 		if (mouth_full)
@@ -109,10 +154,10 @@ public class PlayerController : MonoBehaviour
 			if (mouth_full)
 			{
 				force /= 2;
-				audio_source.PlayOneShot(jump_in_air_sfx);
+				audio_source.PlayOneShot(GetSound("jump_in_air_sfx"));
 			}
 			else {
-				audio_source.PlayOneShot(jump_sfx);
+				audio_source.PlayOneShot(GetSound("jump_sfx"));
 			}
 			rb.AddForce(new Vector2(0, force),ForceMode2D.Impulse);
         }
@@ -132,9 +177,10 @@ public class PlayerController : MonoBehaviour
 			MouthArea.transform.localPosition = new Vector3(Mathf.Abs(MouthArea.transform.localPosition.x), MouthArea.transform.localPosition.y, MouthArea.transform.localPosition.z);
 		}
 	}
+
 	public bool CaughtEnemy(GameObject enemy){
 		audio_source.Stop();
-		audio_source.PlayOneShot(inhale_enemy_sfx);
+		audio_source.PlayOneShot(GetSound("inhale_enemy_sfx"));
 		food_in_mouth = enemy.GetComponent<EnemyBehavior>().type_of_food;
 		Destroy(enemy);
 		print("Yum Yum!");
@@ -144,11 +190,15 @@ public class PlayerController : MonoBehaviour
 		ani_hander.SetTrigger("caught");
 		return true;
 	}
+
 	public void Damage(GameObject obj) {
 		AnimatorStateInfo state = ani_hander.GetCurrentAnimatorStateInfo(0);
 		if (!state.IsName("damage"))
 		{
 			health -= 1;
+		}
+		if (health <= 0) {
+				
 		}
 		GUI.GetComponent<GameUI>().on_player_damaged(health);
 		ani_hander.ResetTrigger("exhale");
@@ -179,7 +229,7 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (Input.GetKeyDown(KeyCode.KeypadEnter) && !mouth_full && IsGrounded())
 		{
-			audio_source.PlayOneShot(inhale_sfx);
+			audio_source.PlayOneShot(GetSound("inhale_sfx"));
 			ani_hander.ResetTrigger("exhale");
 			ani_hander.SetTrigger("inhale");
 			SuckEffector.GetComponent<PointEffector2D>().enabled = true;
@@ -201,11 +251,11 @@ public class PlayerController : MonoBehaviour
 			ani_hander.ResetTrigger("inhale");
 			if(food_in_mouth != FOOD.NONE)
 			{
-				audio_source.PlayOneShot(exhale_star_sfx);
+				audio_source.PlayOneShot(GetSound("exhale_star_sfx"));
 				spitOutStar();
 			}
 			else {
-				audio_source.PlayOneShot(exhale_air_sfx);
+				audio_source.PlayOneShot(GetSound("exhale_air_sfx"));
 			}
 			mouth_full = false;
 			ani_hander.SetTrigger("exhale");
@@ -219,11 +269,11 @@ public class PlayerController : MonoBehaviour
 	}
 
 	private bool IsGrounded()
-    {
+	{
 		Physics2D.queriesStartInColliders = false;
 		bool isGrounded;
 		RaycastHit2D hit = Physics2D.Raycast(collider.bounds.center, Vector2.down, collider.bounds.extents.y + 0.1f);
-		
+
 		if (hit.collider != null)
 		{
 			isGrounded = true;
@@ -234,4 +284,6 @@ public class PlayerController : MonoBehaviour
 		}
 		return isGrounded;
 	}
+
 }
+

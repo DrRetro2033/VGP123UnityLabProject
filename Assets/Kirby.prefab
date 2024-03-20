@@ -377,15 +377,28 @@ MonoBehaviour:
   SuckEffector: {fileID: 6414035386274703653}
   MouthArea: {fileID: 6774303113360617548}
   ProjectilePrefab: {fileID: 708672218264967327, guid: 89c131cc671457b45a4019e7b9fee65c, type: 3}
+  Camera: {fileID: 0}
+  GUI: {fileID: 0}
   proj_offset: {fileID: 3865812007718278517}
-  jump_sfx: {fileID: 8300000, guid: 14fbcd635daf64d4bbc98adaf59cd0ce, type: 3}
-  jump_in_air_sfx: {fileID: 8300000, guid: 917bf2c2d40e59f4bacb0095d900d57c, type: 3}
-  land_sfx: {fileID: 8300000, guid: 50559f90af0956745b435a17728ae557, type: 3}
-  inhale_sfx: {fileID: 8300000, guid: 7f73246c2566fff4dbfc4adb04c02813, type: 3}
-  inhale_enemy_sfx: {fileID: 8300000, guid: 36e2c01258aaf3f44b24d26c6ff76527, type: 3}
-  exhale_star_sfx: {fileID: 8300000, guid: 9aa70b2f7dd3db541a2a5f98595b0e2d, type: 3}
-  exhale_air_sfx: {fileID: 8300000, guid: 31bf3bbe293077446ac50f0404a631a3, type: 3}
-  speed: 80
+  Sounds:
+  - name: jump_sfx
+    sound: {fileID: 8300000, guid: 14fbcd635daf64d4bbc98adaf59cd0ce, type: 3}
+  - name: jump_in_air_sfx
+    sound: {fileID: 8300000, guid: 917bf2c2d40e59f4bacb0095d900d57c, type: 3}
+  - name: land_sfx
+    sound: {fileID: 8300000, guid: 50559f90af0956745b435a17728ae557, type: 3}
+  - name: inhale_sfx
+    sound: {fileID: 8300000, guid: 7f73246c2566fff4dbfc4adb04c02813, type: 3}
+  - name: inhale_enemy_sfx
+    sound: {fileID: 8300000, guid: 36e2c01258aaf3f44b24d26c6ff76527, type: 3}
+  - name: exhale_star_sfx
+    sound: {fileID: 8300000, guid: 9aa70b2f7dd3db541a2a5f98595b0e2d, type: 3}
+  - name: exhale_air_sfx
+    sound: {fileID: 8300000, guid: 31bf3bbe293077446ac50f0404a631a3, type: 3}
+  Abilitiy_Gain_Animations: []
+  speed: 7500
+  max_health: 6
+  lives: 3
 --- !u!1 &6414035386274703653
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,9 +445,9 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: -10
+  m_ForceMagnitude: -1
   m_ForceVariation: 0
-  m_DistanceScale: 3
+  m_DistanceScale: 1
   m_ForceSource: 0
   m_ForceTarget: 0
   m_ForceMode: 0

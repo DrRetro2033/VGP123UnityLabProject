@@ -991,6 +991,468 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SwordGain1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2011
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0a21ac6fdb0274e9815df1bd8e146e
+      internalID: 1325282041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2011
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.65, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3d663d64714434fab55107b950eb49
+      internalID: -1349734159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2015
+        width: 36
+        height: 36
+      alignment: 9
+      pivot: {x: 0.65, y: 0.14}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2afcd7bd42206438c84df1631aba90
+      internalID: 1465377843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2019
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68fc3f930db388409df33b315895c25
+      internalID: 1808461613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2020
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b3df2e2f07d4b42bbd824021eb2f70
+      internalID: -1953256105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 2020
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c218010e38bced44cb32601eda9a572e
+      internalID: 426101614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain7
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 2020
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c542c801576564a8a53b7e4e69e91e
+      internalID: 2060365942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordGain8
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2020
+        width: 36
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9598f2c5aa9ab544ba6b1f827edb649
+      internalID: 138950346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordIdle1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1971
+        width: 24
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3928dcfae0c0a0d4294108f058f5ce6e
+      internalID: -1015605938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordWalk1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1971
+        width: 29
+        height: 29
+      alignment: 9
+      pivot: {x: 0.548, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec1438b218203c4c8cd6ac9090e19a7
+      internalID: -1876206704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordWalk2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1970
+        width: 28
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b5100e5baad7949a78c95e282c0b5b
+      internalID: 1028935102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordWalk3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1970
+        width: 16
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaaf805cb208eb45b009a09af661852
+      internalID: -304687240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordWalk4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1970
+        width: 17
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d233023728ae24887c6560c2c4962e
+      internalID: -236939217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1687
+        width: 26
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fdd8d0a0c00034c9e095f79da5f941
+      internalID: 2015738243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1687
+        width: 26
+        height: 26
+      alignment: 9
+      pivot: {x: 0.3846154, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9a0aac8f26cd542baef03e53ef22c4
+      internalID: 997729939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1682
+        width: 28
+        height: 31
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.15151516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66a4d0b8be389c44abdcda63c64ca0b
+      internalID: -1841058307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump4
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1679
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.375, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27c98c3442d6f7478d4034d7460dba3
+      internalID: 144824849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1679
+        width: 26
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e638df273958e749974379d073ad04b
+      internalID: 2032820401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump6
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1679
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.7083334, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e388fe23ef614740a35051f3ffe1407
+      internalID: -977759251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1682
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0.1851852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f7efc09467ed345a425985cda1164d
+      internalID: 1891258640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordJump8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1687
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.6666667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708c666ffe3be3244a38164cbe2a3463
+      internalID: 227861739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwordFall1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1917
+        width: 20
+        height: 29
+      alignment: 9
+      pivot: {x: 0.65000004, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea3383c84d92644999292846750d6aa
+      internalID: -1298899931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1041,6 +1503,28 @@ TextureImporter:
       Swallow1: -511219166
       Swallow2: -1785501408
       Swallow3: 389725725
+      SwordFall1: -1298899931
+      SwordGain1: 1325282041
+      SwordGain2: -1349734159
+      SwordGain3: 1465377843
+      SwordGain4: 1808461613
+      SwordGain5: -1953256105
+      SwordGain6: 426101614
+      SwordGain7: 2060365942
+      SwordGain8: 138950346
+      SwordIdle1: -1015605938
+      SwordJump1: 2015738243
+      SwordJump2: 997729939
+      SwordJump3: -1841058307
+      SwordJump4: 144824849
+      SwordJump5: 2032820401
+      SwordJump6: -977759251
+      SwordJump7: 1891258640
+      SwordJump8: 227861739
+      SwordWalk1: -1876206704
+      SwordWalk2: 1028935102
+      SwordWalk3: -304687240
+      SwordWalk4: -236939217
       Walk1: -651673885
       Walk2: -1752480081
       Walk3: 1512726780
